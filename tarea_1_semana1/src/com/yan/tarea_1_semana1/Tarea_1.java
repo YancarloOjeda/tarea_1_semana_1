@@ -5,16 +5,18 @@ public class Tarea_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		double[][] miArray = new double[5][5];
+		int[][] miArray = new int[4][4];
+		int aux = 2;
 		
-		for(int i = 0; i < 3; i++) {
-			for(int j = 0; j<3; j++) {
-				miArray[i][j] = i;
+		for(int i = 0; i < 4; i++) {
+			for(int j = 0; j<4; j++) {
+				miArray[i][j] = aux;
+				aux = aux + 2;
 				System.out.println(miArray[i][j]);
 			}
 		}
 		
-
+		
 	}
 
 }
