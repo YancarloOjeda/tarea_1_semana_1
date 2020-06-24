@@ -12,11 +12,24 @@ public class Tarea_1 {
 			for(int j = 0; j<4; j++) {
 				miArray[i][j] = aux;
 				aux = aux + 2;
-				System.out.println(miArray[i][j]);
 			}
 		}
 		
 		
+		for(int[] row : miArray) {
+            printRow(row);
+        }
+		
+		
 	}
+	
+	
+	public static void printRow(int[] row) {
+        for (int i : row) {
+            System.out.print(i);
+            System.out.print("\t");
+        }
+        System.out.println();
+    }
 
 }
